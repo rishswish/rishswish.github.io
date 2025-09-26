@@ -19,7 +19,9 @@ import {
   Award,
   BookOpen,
   ChevronRight,
-  Star
+  Star,
+  Trophy,
+  Certificate
 } from 'lucide-react';
 import { mockData } from '../data/mockData';
 
@@ -37,7 +39,7 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-black text-gray-100">
       {/* Header */}
-      <header className="fixed top-0 w-full bg-gray-900/80 backdrop-blur-md border-b border-gray-800 z-50">
+      <header className="fixed top-0 w-full bg-gray-900/90 backdrop-blur-md border-b border-gray-800 z-50">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <h1 className="text-xl font-bold text-white">Rishabh Patil</h1>
@@ -45,6 +47,7 @@ const Portfolio = () => {
               <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-white transition-colors">About</button>
               <button onClick={() => scrollToSection('skills')} className="text-gray-300 hover:text-white transition-colors">Skills</button>
               <button onClick={() => scrollToSection('projects')} className="text-gray-300 hover:text-white transition-colors">Projects</button>
+              <button onClick={() => scrollToSection('certifications')} className="text-gray-300 hover:text-white transition-colors">Certifications</button>
               <button onClick={() => scrollToSection('experience')} className="text-gray-300 hover:text-white transition-colors">Experience</button>
               <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-white transition-colors">Contact</button>
             </div>
@@ -62,14 +65,14 @@ const Portfolio = () => {
                   <Brain className="h-5 w-5" />
                   <span className="text-sm font-mono tracking-wide">AI/ML Engineer</span>
                 </div>
-                <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+                <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-white">
                   Hi! I am{" "}
                   <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                     Rishabh
                   </span>{" "}
                   Patil
                 </h1>
-                <p className="text-xl text-gray-400 leading-relaxed max-w-2xl">
+                <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
                   Data Science graduate student at NYU, specializing in building intelligent and scalable systems at the intersection of 
                   <span className="text-blue-400 font-semibold"> machine learning</span>, 
                   <span className="text-cyan-400 font-semibold"> NLP</span>, and 
@@ -90,7 +93,7 @@ const Portfolio = () => {
                   variant="outline" 
                   size="lg"
                   onClick={() => window.open(mockData.resumeUrl, '_blank')}
-                  className="border-gray-600 text-gray-300 hover:bg-gray-800 px-8 py-3 rounded-full"
+                  className="border-gray-600 text-gray-200 hover:bg-gray-800 hover:text-white px-8 py-3 rounded-full"
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Resume
@@ -128,16 +131,16 @@ const Portfolio = () => {
       <section id="about" className="py-20 px-6 bg-gray-900/50">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
+            <h2 className="text-4xl font-bold text-center mb-12 text-white">About Me</h2>
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div className="space-y-6">
-                <p className="text-lg text-gray-300 leading-relaxed">
+                <p className="text-lg text-gray-200 leading-relaxed">
                   I'm a data-driven builder with a passion for solving real-world problems through elegant 
                   machine learning and AI solutions. From deploying retrieval-augmented generation systems 
                   to winning awards for deep learning research, I thrive at the intersection of code, 
                   curiosity, and creativity.
                 </p>
-                <p className="text-lg text-gray-300 leading-relaxed">
+                <p className="text-lg text-gray-200 leading-relaxed">
                   Currently pursuing my MS in Data Science at NYU (GPA: 3.78/4.0), I hold a B.Tech in 
                   Data Science with Honors in Computational Finance from the University of Mumbai (GPA: 3.96/4.0).
                 </p>
@@ -151,9 +154,9 @@ const Portfolio = () => {
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-3 mb-4">
                       <Award className="h-6 w-6 text-yellow-400" />
-                      <h3 className="text-xl font-semibold">Recent Achievement</h3>
+                      <h3 className="text-xl font-semibold text-white">Recent Achievement</h3>
                     </div>
-                    <p className="text-gray-300">
+                    <p className="text-gray-200">
                       3rd Prize in AI & Deep Learning Track at ICDMAI 2024 for 
                       Driver Drowsiness Detection System. Published in Springer LNNS 998.
                     </p>
@@ -162,11 +165,11 @@ const Portfolio = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-blue-400">3.78</div>
-                    <div className="text-sm text-gray-400">NYU GPA</div>
+                    <div className="text-sm text-gray-300">NYU GPA</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-cyan-400">3.96</div>
-                    <div className="text-sm text-gray-400">Undergrad GPA</div>
+                    <div className="text-sm text-gray-300">Undergrad GPA</div>
                   </div>
                 </div>
               </div>
@@ -178,12 +181,12 @@ const Portfolio = () => {
       {/* Skills Section */}
       <section id="skills" className="py-20 px-6">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">Technical Expertise</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-white">Technical Expertise</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {mockData.skills.map((category, index) => (
               <Card key={index} className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-colors">
                 <CardHeader>
-                  <CardTitle className="flex items-center space-x-3 text-xl">
+                  <CardTitle className="flex items-center space-x-3 text-xl text-white">
                     <category.icon className="h-6 w-6 text-blue-400" />
                     <span>{category.category}</span>
                   </CardTitle>
@@ -191,7 +194,7 @@ const Portfolio = () => {
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill, skillIndex) => (
-                      <Badge key={skillIndex} variant="secondary" className="bg-gray-700 text-gray-200">
+                      <Badge key={skillIndex} variant="secondary" className="bg-gray-700 text-gray-100 hover:bg-gray-600">
                         {skill}
                       </Badge>
                     ))}
@@ -206,13 +209,22 @@ const Portfolio = () => {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6 bg-gray-900/50">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-white">Featured Projects</h2>
           <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
             {mockData.projects.map((project, index) => (
-              <Card key={index} className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105">
+              <Card key={index} className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 overflow-hidden">
+                {project.image && (
+                  <div className="h-48 overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
                 <CardHeader>
                   <div className="flex items-start justify-between">
-                    <CardTitle className="text-xl">{project.title}</CardTitle>
+                    <CardTitle className="text-xl text-white">{project.title}</CardTitle>
                     {project.github && (
                       <Button variant="ghost" size="sm" onClick={() => window.open(project.github, '_blank')}>
                         <Github className="h-4 w-4" />
@@ -224,7 +236,7 @@ const Portfolio = () => {
                 <CardContent className="space-y-4">
                   <ul className="space-y-2">
                     {project.highlights.map((highlight, hIndex) => (
-                      <li key={hIndex} className="text-gray-300 leading-relaxed flex items-start">
+                      <li key={hIndex} className="text-gray-200 leading-relaxed flex items-start">
                         <ChevronRight className="h-4 w-4 text-blue-400 mt-0.5 mr-2 flex-shrink-0" />
                         {highlight}
                       </li>
@@ -244,13 +256,49 @@ const Portfolio = () => {
         </div>
       </section>
 
+      {/* Certifications Section */}
+      <section id="certifications" className="py-20 px-6">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16 text-white flex items-center justify-center">
+            <Trophy className="mr-3 h-10 w-10 text-yellow-400" />
+            Certifications & Achievements
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {mockData.certifications.map((cert, index) => (
+              <Card key={index} className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105">
+                <CardHeader>
+                  <div className="flex items-center space-x-3">
+                    <cert.icon className={`h-8 w-8 ${cert.color}`} />
+                    <CardTitle className="text-lg text-white">{cert.title}</CardTitle>
+                  </div>
+                  <CardDescription className="text-gray-400">{cert.issuer} • {cert.year}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-200 text-sm leading-relaxed">{cert.description}</p>
+                  {cert.link && (
+                    <Button 
+                      variant="ghost" 
+                      size="sm" 
+                      className="mt-3 p-0 text-blue-400 hover:text-blue-300"
+                      onClick={() => window.open(cert.link, '_blank')}
+                    >
+                      View Certificate <ExternalLink className="ml-1 h-3 w-3" />
+                    </Button>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Experience & Education */}
-      <section id="experience" className="py-20 px-6">
+      <section id="experience" className="py-20 px-6 bg-gray-900/50">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Experience */}
             <div>
-              <h2 className="text-3xl font-bold mb-8 flex items-center">
+              <h2 className="text-3xl font-bold mb-8 flex items-center text-white">
                 <Briefcase className="mr-3 h-8 w-8 text-blue-400" />
                 Experience
               </h2>
@@ -259,7 +307,7 @@ const Portfolio = () => {
                   <Card key={index} className="bg-gray-800/50 border-gray-700">
                     <CardContent className="p-6">
                       <div className="flex justify-between items-start mb-2">
-                        <h3 className="text-xl font-semibold">{job.title}</h3>
+                        <h3 className="text-xl font-semibold text-white">{job.title}</h3>
                         <Badge variant="secondary" className="bg-blue-600/20 text-blue-300">
                           {job.duration}
                         </Badge>
@@ -267,7 +315,7 @@ const Portfolio = () => {
                       <p className="text-blue-400 font-semibold mb-3">{job.company} - {job.location}</p>
                       <ul className="space-y-2">
                         {job.highlights.map((highlight, hIndex) => (
-                          <li key={hIndex} className="text-gray-300 text-sm flex items-start">
+                          <li key={hIndex} className="text-gray-200 text-sm flex items-start">
                             <ChevronRight className="h-3 w-3 text-blue-400 mt-1 mr-2 flex-shrink-0" />
                             {highlight}
                           </li>
@@ -281,7 +329,7 @@ const Portfolio = () => {
 
             {/* Education */}
             <div>
-              <h2 className="text-3xl font-bold mb-8 flex items-center">
+              <h2 className="text-3xl font-bold mb-8 flex items-center text-white">
                 <GraduationCap className="mr-3 h-8 w-8 text-green-400" />
                 Education
               </h2>
@@ -290,7 +338,7 @@ const Portfolio = () => {
                   <Card key={index} className="bg-gray-800/50 border-gray-700">
                     <CardContent className="p-6">
                       <div className="flex justify-between items-start mb-2">
-                        <h3 className="text-xl font-semibold">{edu.degree}</h3>
+                        <h3 className="text-xl font-semibold text-white">{edu.degree}</h3>
                         <Badge variant="secondary" className="bg-green-600/20 text-green-300">
                           GPA: {edu.gpa}
                         </Badge>
@@ -314,14 +362,14 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-gray-900/50">
+      <section id="contact" className="py-20 px-6">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-16">Get In Touch</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-white">Get In Touch</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-semibold mb-4 text-blue-400">Let's Build Something Amazing</h3>
-                <p className="text-lg text-gray-300 leading-relaxed">
+                <p className="text-lg text-gray-200 leading-relaxed">
                   I'm actively seeking Summer/Fall 2025 internships in Data Science, Machine Learning, 
                   AI, or Data Analysis. Let's connect and discuss how my technical expertise can 
                   contribute to your team.
@@ -329,19 +377,19 @@ const Portfolio = () => {
               </div>
               
               <div className="space-y-4">
-                <div className="flex items-center space-x-3 text-gray-300">
+                <div className="flex items-center space-x-3 text-gray-200">
                   <Mail className="h-5 w-5 text-blue-400" />
                   <a href={`mailto:${mockData.contact.email}`} className="hover:text-blue-400 transition-colors">
                     {mockData.contact.email}
                   </a>
                 </div>
-                <div className="flex items-center space-x-3 text-gray-300">
+                <div className="flex items-center space-x-3 text-gray-200">
                   <Phone className="h-5 w-5 text-green-400" />
                   <a href={`tel:${mockData.contact.phone}`} className="hover:text-green-400 transition-colors">
                     {mockData.contact.phone}
                   </a>
                 </div>
-                <div className="flex items-center space-x-3 text-gray-300">
+                <div className="flex items-center space-x-3 text-gray-200">
                   <MapPin className="h-5 w-5 text-purple-400" />
                   <span>{mockData.contact.location}</span>
                 </div>
@@ -358,7 +406,7 @@ const Portfolio = () => {
                 <Button 
                   variant="outline" 
                   onClick={() => window.open(mockData.contact.github, '_blank')}
-                  className="border-gray-600 text-gray-300 hover:bg-gray-800"
+                  className="border-gray-600 text-gray-200 hover:bg-gray-800 hover:text-white"
                 >
                   <Github className="mr-2 h-4 w-4" />
                   GitHub
@@ -369,23 +417,23 @@ const Portfolio = () => {
             <Card className="bg-gray-800/50 border-gray-700">
               <CardContent className="p-8 text-center">
                 <BookOpen className="h-16 w-16 text-blue-400 mx-auto mb-6" />
-                <h3 className="text-xl font-semibold mb-4">Quick Stats</h3>
+                <h3 className="text-xl font-semibold mb-4 text-white">Quick Stats</h3>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
                     <div className="text-2xl font-bold text-blue-400">3+</div>
-                    <div className="text-sm text-gray-400">Internships</div>
+                    <div className="text-sm text-gray-300">Internships</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-green-400">4+</div>
-                    <div className="text-sm text-gray-400">Major Projects</div>
+                    <div className="text-sm text-gray-300">Major Projects</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-purple-400">1</div>
-                    <div className="text-sm text-gray-400">Publication</div>
+                    <div className="text-sm text-gray-300">Publication</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-yellow-400">3rd</div>
-                    <div className="text-sm text-gray-400">Place Award</div>
+                    <div className="text-sm text-gray-300">Place Award</div>
                   </div>
                 </div>
                 <Separator className="my-6 bg-gray-700" />
@@ -403,9 +451,9 @@ const Portfolio = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 border-t border-gray-800">
+      <footer className="py-8 px-6 border-t border-gray-800 bg-gray-900/50">
         <div className="container mx-auto text-center">
-          <p className="text-gray-400">
+          <p className="text-gray-300">
             © 2025 Rishabh Patil. Built with React & Tailwind CSS.
           </p>
         </div>

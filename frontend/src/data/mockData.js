@@ -4,7 +4,12 @@ import {
   Database, 
   Globe, 
   BarChart3, 
-  Cloud 
+  Cloud,
+  Award,
+  Trophy,
+  Star,
+  Certificate,
+  BookOpen
 } from 'lucide-react';
 
 export const mockData = {
@@ -57,6 +62,7 @@ export const mockData = {
     {
       title: "Progressive Learning in LLMs with Structured Grammar Books",
       duration: "January 2025 – May 2025",
+      image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/w15zj4ab_grammer-learning.png",
       highlights: [
         "Curated a 345-lesson curriculum from New Concept English using Tesseract OCR and Stanza, generating 1.7K syntax feature vectors (POS, DEP, NER, morphology)",
         "Built Transformer variants (SyntaxGPT, SyntaxT5) by concatenating token + syntax embeddings, cutting pre-training time from 2.5 days to 3 hours (-95% compute)",
@@ -68,6 +74,7 @@ export const mockData = {
     {
       title: "Driver Drowsiness Detection System Using YOLOv5",
       duration: "January 2022 – January 2024",
+      image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/ini9z5do_driver-drowsiness-detection.png",
       highlights: [
         "Trained dual YOLOv5 models (eye-closure & yawning) on 1.2K+ annotated images, achieving 85% accuracy with 30% faster alert-response",
         "Integrated CNN-fusion layer that reduced false positives by 20% and improved accuracy by 15%, processing 1M+ video frames",
@@ -79,6 +86,7 @@ export const mockData = {
     {
       title: "Personalized Recipe Recommendation System",
       duration: "July 2023 - May 2024",
+      image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/66ieat0e_recipe-recommendation-system.png",
       highlights: [
         "Built Flask interface backed by GPT-4 + text-embedding-ada-002 + LanceDB RAG pipeline, driving 35% jump in user engagement",
         "Designed allergy-aware cosine-similarity scorer with real-time feedback loop, boosting user-satisfaction scores by 50%",
@@ -90,6 +98,7 @@ export const mockData = {
     {
       title: "MovieLens Recommendation & Segmentation",
       duration: "January 2025 – May 2025",
+      image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/ojlon211_Big-Data-Project.png",
       highlights: [
         "Built terabyte-scale PySpark + Hadoop pipeline on full MovieLens corpus (330K users / 86K movies), enabling distributed analytics",
         "Developed two recommenders: Spark ALS model with +30% Precision@100 and bias-corrected popularity model for 90% sparse data",
@@ -97,6 +106,59 @@ export const mockData = {
       ],
       technologies: ["PySpark", "Hadoop", "ALS", "MinHash", "LSH", "Big Data", "Recommendation Systems"],
       github: "https://github.com/rishswish"
+    }
+  ],
+
+  certifications: [
+    {
+      title: "3rd Prize - AI & Deep Learning Track",
+      issuer: "ICDMAI 2024",
+      year: "2024",
+      description: "Awarded for outstanding performance in Driver Drowsiness Detection System using YOLOv5. Research findings published in Springer LNNS 998.",
+      icon: Trophy,
+      color: "text-yellow-400",
+      link: "https://github.com/rishswish/ICDMAI_3rd_Prize_Award/blob/main/Rishabh_ICDMAI_2024_Docs_21stJan.pdf"
+    },
+    {
+      title: "Publication in Springer LNNS 998",
+      issuer: "Springer Nature",
+      year: "2024",
+      description: "Published research paper on 'Driver Drowsiness Detection System Using YoloV5' in Data Management, Analytics and Innovation conference proceedings.",
+      icon: BookOpen,
+      color: "text-blue-400",
+      link: "https://link.springer.com/chapter/10.1007/978-981-97-3245-6_21"
+    },
+    {
+      title: "Top 0.5% Nationwide Selection",
+      issuer: "New York University",
+      year: "2024",
+      description: "Selected among top 0.5% applicants nationwide for the prestigious NYU MS in Data Science program.",
+      icon: Star,
+      color: "text-purple-400"
+    },
+    {
+      title: "Guest Seminar Recognition",
+      issuer: "University of Mumbai",
+      year: "2023",
+      description: "Recognized by department faculty for delivering a guest seminar on NLP in Industry, sharing practical insights with undergraduate students.",
+      icon: Certificate,
+      color: "text-green-400"
+    },
+    {
+      title: "B.Tech with Honors",
+      issuer: "University of Mumbai",
+      year: "2024",
+      description: "Graduated with Honors in Computational Finance, achieving exceptional GPA of 3.96/4.0 in Data Science and Engineering program.",
+      icon: Award,
+      color: "text-cyan-400"
+    },
+    {
+      title: "Research Project Leadership",
+      issuer: "University of Mumbai",
+      year: "2023",
+      description: "Led a university-level research project on Progressive Learning for NLP models using T5 and GPT2 architectures, demonstrating advanced research capabilities.",
+      icon: Brain,
+      color: "text-orange-400"
     }
   ],
 
