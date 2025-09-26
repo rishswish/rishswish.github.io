@@ -52,7 +52,7 @@ const Portfolio = () => {
               <button onClick={() => scrollToSection('experience')} className="text-gray-300 hover:text-white transition-colors">Experience</button>
               <button onClick={() => scrollToSection('timeline')} className="text-gray-300 hover:text-white transition-colors">Timeline</button>
               <button onClick={() => scrollToSection('resume')} className="text-gray-300 hover:text-white transition-colors">Resume</button>
-              <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-white transition-colors">Contact</button>
+              <button onClick={() => scrollToSection('certifications')} className="text-gray-300 hover:text-white transition-colors">Certifications</button>
             </div>
           </div>
         </nav>
