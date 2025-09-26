@@ -596,15 +596,11 @@ const Portfolio = () => {
                 </div>
                 <Separator className="my-6 bg-gray-700" />
                 <Button 
-                  onClick={() => {
-                    // Try multiple resume access methods
-                    const email = 'mailto:rbp5812@nyu.edu?subject=Resume Request&body=Hello Rishabh, I would like to request your resume for review.';
-                    window.open(email, '_blank');
-                  }}
+                  onClick={() => window.open('/resume.pdf', '_blank')}
                   className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
                 >
-                  <Mail className="mr-2 h-4 w-4" />
-                  Request Resume via Email
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
                 </Button>
               </CardContent>
             </Card>
