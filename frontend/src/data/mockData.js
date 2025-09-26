@@ -17,7 +17,7 @@ import {
 
 export const mockData = {
   profileImage: "https://rishswish.github.io/images/rishabh_img.JPG",
-  resumeUrl: "https://rishswish.github.io/Rishabh_Patil_NYU_Resume_Intern.pdf",
+  resumeUrl: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/q7xcx87s_Rishabh_NYU_CV_JOB.pdf",
   
   contact: {
     email: "rbp5812@nyu.edu",
