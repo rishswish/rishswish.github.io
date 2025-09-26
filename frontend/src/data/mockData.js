@@ -8,8 +8,8 @@ import {
   Award,
   Trophy,
   Star,
-  Certificate,
-  BookOpen
+  BookOpen,
+  GraduationCap
 } from 'lucide-react';
 
 export const mockData = {
