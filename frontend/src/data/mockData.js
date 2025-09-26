@@ -114,15 +114,6 @@ export const mockData = {
 
   timeline: [
     {
-      title: "MS in Data Science",
-      organization: "New York University",
-      period: "Sep 2024 - May 2026",
-      description: "Currently pursuing Master's degree with focus on Natural Language Understanding, Big Data, and Machine Learning (GPA: 3.78/4.0)",
-      icon: GraduationCap,
-      color: "bg-green-500",
-      achievement: "Selected among top 0.5% applicants nationwide"
-    },
-    {
       title: "NLP Intern",
       organization: "Muck Rack, New York",
       period: "Aug 2025 - Present",
@@ -131,13 +122,13 @@ export const mockData = {
       color: "bg-blue-500"
     },
     {
-      title: "B.Tech in Data Science (Honors)",
-      organization: "University of Mumbai",
-      period: "Jul 2020 - May 2024",
-      description: "Graduated with Honors in Computational Finance, specializing in Data Science and Engineering (GPA: 3.96/4.0)",
+      title: "MS in Data Science",
+      organization: "New York University",
+      period: "Sep 2024 - May 2026",
+      description: "Currently pursuing Master's degree with focus on Natural Language Understanding, Big Data, and Machine Learning (GPA: 3.78/4.0)",
       icon: GraduationCap,
       color: "bg-green-500",
-      achievement: "Dean's List all semesters, Research Project Leadership"
+      achievement: "Selected among top 0.5% applicants nationwide"
     },
     {
       title: "Generative AI Intern",
@@ -154,6 +145,15 @@ export const mockData = {
       description: "Developed Computer Vision + NLP pipeline using Azure OCR, reducing processing time by 25% and manual review effort by 75%",
       icon: Briefcase,
       color: "bg-blue-500"
+    },
+    {
+      title: "B.Tech in Data Science (Honors)",
+      organization: "University of Mumbai",
+      period: "Jul 2020 - May 2024",
+      description: "Graduated with Honors in Computational Finance, specializing in Data Science and Engineering (GPA: 3.96/4.0)",
+      icon: GraduationCap,
+      color: "bg-green-500",
+      achievement: "Dean's List all semesters, Research Project Leadership"
     }
   ],
 
@@ -163,24 +163,28 @@ export const mockData = {
       issuer: "Amazon Web Services",
       year: "May 2023",
       image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/wkrq7j6q_AWS%20Academy%20Cloud%20Architecting.png",
+      link: "https://www.credly.com/badges/your-cloud-architecting-badge"
     },
     {
       title: "AWS Academy Data Engineering",
       issuer: "Amazon Web Services",
       year: "May 2023",
       image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/xz0gyr8a_AWS%20Academy%20Data%20Engineering.png",
+      link: "https://www.credly.com/badges/your-data-engineering-badge"
     },
     {
       title: "AWS Academy Data Analytics",
       issuer: "Amazon Web Services",
       year: "July 2022",
       image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/v6jqz9ef_aws%20data%20analytics.png",
+      link: "https://www.credly.com/badges/your-data-analytics-badge"
     },
     {
       title: "AWS Academy Cloud Foundations",
       issuer: "Amazon Web Services",
       year: "2022",
       image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/71orr277_Aws%20cloud%20foundations.png",
+      link: "https://www.credly.com/badges/your-cloud-foundations-badge"
     }
   ],
 

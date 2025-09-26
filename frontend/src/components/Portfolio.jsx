@@ -215,24 +215,32 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-16 text-white">Featured Projects</h2>
           <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
             {mockData.projects.map((project, index) => (
-              <Card key={index} className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 overflow-hidden">
+              <Card 
+                key={index} 
+                className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer"
+                onClick={() => window.open(project.github, '_blank')}
+              >
                 {project.image && (
-                  <div className="w-full h-64 overflow-hidden bg-gray-900">
+                  <div className="w-full h-80 overflow-hidden bg-gray-900 relative group">
                     <img 
                       src={project.image} 
                       alt={project.title}
-                      className="w-full h-full object-contain p-4"
+                      className="w-full h-full object-contain p-6"
                     />
+                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center space-x-2 text-white bg-blue-600 px-4 py-2 rounded-full">
+                        <Github className="h-4 w-4" />
+                        <span className="text-sm font-semibold">View on GitHub</span>
+                      </div>
+                    </div>
                   </div>
                 )}
                 <CardHeader>
                   <div className="flex items-start justify-between">
-                    <CardTitle className="text-xl text-white">{project.title}</CardTitle>
-                    {project.github && (
-                      <Button variant="ghost" size="sm" onClick={() => window.open(project.github, '_blank')}>
-                        <Github className="h-4 w-4" />
-                      </Button>
-                    )}
+                    <CardTitle className="text-xl text-white flex items-center">
+                      {project.title}
+                      <ExternalLink className="h-4 w-4 ml-2 text-blue-400" />
+                    </CardTitle>
                   </div>
                   <CardDescription className="text-gray-400">{project.duration}</CardDescription>
                 </CardHeader>
@@ -380,16 +388,29 @@ const Portfolio = () => {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {mockData.certifications.map((cert, index) => (
-              <Card key={index} className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 overflow-hidden">
-                <div className="w-full h-48 bg-white p-4 flex items-center justify-center">
+              <Card 
+                key={index} 
+                className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 overflow-hidden cursor-pointer"
+                onClick={() => window.open(cert.link, '_blank')}
+              >
+                <div className="w-full h-48 bg-white p-4 flex items-center justify-center relative group">
                   <img 
                     src={cert.image} 
                     alt={cert.title}
                     className="w-full h-full object-contain"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center space-x-2 text-white bg-blue-600 px-3 py-2 rounded-full">
+                      <ExternalLink className="h-4 w-4" />
+                      <span className="text-xs font-semibold">View Certificate</span>
+                    </div>
+                  </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-white mb-2">{cert.title}</h3>
+                  <h3 className="text-lg font-semibold text-white mb-2 flex items-center">
+                    {cert.title}
+                    <ExternalLink className="h-4 w-4 ml-2 text-blue-400" />
+                  </h3>
                   <p className="text-blue-400 font-medium mb-2">{cert.issuer}</p>
                   <p className="text-gray-400 text-sm mb-4">Issued: {cert.year}</p>
                   <Badge variant="outline" className="border-yellow-400/30 text-yellow-300 w-full justify-center">
