@@ -95,16 +95,7 @@ const Portfolio = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  onClick={() => {
-                    // Try GitHub first, fallback to opening resume section
-                    const resumeUrl = "https://rishswish.github.io/Rishabh_Patil_NYU_Resume_Intern.pdf";
-                    try {
-                      window.open(resumeUrl, '_blank');
-                    } catch (error) {
-                      // If blocked, scroll to resume section instead
-                      scrollToSection('resume');
-                    }
-                  }}
+                  onClick={() => window.open('/resume.pdf', '_blank')}
                   className="border-gray-600 text-gray-200 hover:bg-gray-800 hover:text-white px-8 py-3 rounded-full"
                 >
                   <Download className="mr-2 h-4 w-4" />
