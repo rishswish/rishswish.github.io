@@ -72,7 +72,7 @@ export const mockData = {
         "SyntaxT5 achieved 87% accuracy on TREC benchmark with 52% faster inference (236s → 114s) over baseline models"
       ],
       technologies: ["PyTorch", "Hugging Face", "Transformers", "Tesseract OCR", "Stanza", "TREC", "NLP"],
-      github: "https://github.com/rishswish"
+      github: "https://github.com/rishswish/Progressive-Learning-in-LLMs-Using-Structured-Grammar-Books"
     },
     {
       title: "Driver Drowsiness Detection System Using YOLOv5",
@@ -84,7 +84,7 @@ export const mockData = {
         "Awarded 3rd Prize in AI & Deep Learning track at ICDMAI 2024; findings published in Springer LNNS 998"
       ],
       technologies: ["YOLOv5", "Computer Vision", "CNN", "OpenCV", "Python", "Deep Learning"],
-      github: "https://github.com/rishswish"
+      github: "https://github.com/rishswish/Drowsiness-Detection-Important-Files"
     },
     {
       title: "Personalized Recipe Recommendation System",
@@ -96,7 +96,7 @@ export const mockData = {
         "Orchestrated cloud workflows with LangChain, Pandas, NumPy, serving real-time recommendations to 10K+ sessions"
       ],
       technologies: ["Flask", "GPT-4", "LanceDB", "RAG", "LangChain", "Pandas", "NumPy", "Cosine Similarity"],
-      github: "https://github.com/rishswish"
+      github: "https://github.com/rishswish/Recipe-Gpt"
     },
     {
       title: "MovieLens Recommendation & Segmentation",
@@ -108,7 +108,7 @@ export const mockData = {
         "Achieved +66% MAP and 20× ALS performance improvement with sub-second latency using MinHash + LSH"
       ],
       technologies: ["PySpark", "Hadoop", "ALS", "MinHash", "LSH", "Big Data", "Recommendation Systems"],
-      github: "https://github.com/rishswish"
+      github: "https://github.com/rishswish/Big-Data_Movie-recommendation_and_Customer-Segmentation"
     }
   ],
 
