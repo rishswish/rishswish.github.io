@@ -9,7 +9,10 @@ import {
   Trophy,
   Star,
   BookOpen,
-  GraduationCap
+  GraduationCap,
+  Briefcase,
+  Calendar,
+  Building
 } from 'lucide-react';
 
 export const mockData = {
@@ -109,56 +112,75 @@ export const mockData = {
     }
   ],
 
+  timeline: [
+    {
+      title: "MS in Data Science",
+      organization: "New York University",
+      period: "Sep 2024 - May 2026",
+      description: "Currently pursuing Master's degree with focus on Natural Language Understanding, Big Data, and Machine Learning (GPA: 3.78/4.0)",
+      icon: GraduationCap,
+      color: "bg-green-500",
+      achievement: "Selected among top 0.5% applicants nationwide"
+    },
+    {
+      title: "NLP Intern",
+      organization: "Muck Rack, New York",
+      period: "Aug 2025 - Present",
+      description: "Implementing RAG-powered chatbot solutions with GPT-4.5, LangChain, and Weaviate for enterprise media intelligence platform",
+      icon: Briefcase,
+      color: "bg-blue-500"
+    },
+    {
+      title: "B.Tech in Data Science (Honors)",
+      organization: "University of Mumbai",
+      period: "Jul 2020 - May 2024",
+      description: "Graduated with Honors in Computational Finance, specializing in Data Science and Engineering (GPA: 3.96/4.0)",
+      icon: GraduationCap,
+      color: "bg-green-500",
+      achievement: "Dean's List all semesters, Research Project Leadership"
+    },
+    {
+      title: "Generative AI Intern",
+      organization: "Solar Secure Solution, India",
+      period: "Feb 2023 - Apr 2023",
+      description: "Built real-time IoT analytics pipeline with predictive insights using ARIMA modeling, cutting incident response time by 40%",
+      icon: Briefcase,
+      color: "bg-blue-500"
+    },
+    {
+      title: "Machine Learning Intern",
+      organization: "Acmegrade Pvt Ltd, India",
+      period: "Jul 2022 - Sep 2022",
+      description: "Developed Computer Vision + NLP pipeline using Azure OCR, reducing processing time by 25% and manual review effort by 75%",
+      icon: Briefcase,
+      color: "bg-blue-500"
+    }
+  ],
+
   certifications: [
     {
-      title: "3rd Prize - AI & Deep Learning Track",
-      issuer: "ICDMAI 2024",
-      year: "2024",
-      description: "Awarded for outstanding performance in Driver Drowsiness Detection System using YOLOv5. Research findings published in Springer LNNS 998.",
-      icon: Trophy,
-      color: "text-yellow-400",
-      link: "https://github.com/rishswish/ICDMAI_3rd_Prize_Award/blob/main/Rishabh_ICDMAI_2024_Docs_21stJan.pdf"
+      title: "AWS Academy Cloud Architecting",
+      issuer: "Amazon Web Services",
+      year: "May 2023",
+      image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/wkrq7j6q_AWS%20Academy%20Cloud%20Architecting.png",
     },
     {
-      title: "Publication in Springer LNNS 998",
-      issuer: "Springer Nature",
-      year: "2024",
-      description: "Published research paper on 'Driver Drowsiness Detection System Using YoloV5' in Data Management, Analytics and Innovation conference proceedings.",
-      icon: BookOpen,
-      color: "text-blue-400",
-      link: "https://link.springer.com/chapter/10.1007/978-981-97-3245-6_21"
+      title: "AWS Academy Data Engineering",
+      issuer: "Amazon Web Services",
+      year: "May 2023",
+      image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/xz0gyr8a_AWS%20Academy%20Data%20Engineering.png",
     },
     {
-      title: "Top 0.5% Nationwide Selection",
-      issuer: "New York University",
-      year: "2024",
-      description: "Selected among top 0.5% applicants nationwide for the prestigious NYU MS in Data Science program.",
-      icon: Star,
-      color: "text-purple-400"
+      title: "AWS Academy Data Analytics",
+      issuer: "Amazon Web Services",
+      year: "July 2022",
+      image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/v6jqz9ef_aws%20data%20analytics.png",
     },
     {
-      title: "Guest Seminar Recognition",
-      issuer: "University of Mumbai",
-      year: "2023",
-      description: "Recognized by department faculty for delivering a guest seminar on NLP in Industry, sharing practical insights with undergraduate students.",
-      icon: GraduationCap,
-      color: "text-green-400"
-    },
-    {
-      title: "B.Tech with Honors",
-      issuer: "University of Mumbai",
-      year: "2024",
-      description: "Graduated with Honors in Computational Finance, achieving exceptional GPA of 3.96/4.0 in Data Science and Engineering program.",
-      icon: Award,
-      color: "text-cyan-400"
-    },
-    {
-      title: "Research Project Leadership",
-      issuer: "University of Mumbai",
-      year: "2023",
-      description: "Led a university-level research project on Progressive Learning for NLP models using T5 and GPT2 architectures, demonstrating advanced research capabilities.",
-      icon: Brain,
-      color: "text-orange-400"
+      title: "AWS Academy Cloud Foundations",
+      issuer: "Amazon Web Services",
+      year: "2022",
+      image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/71orr277_Aws%20cloud%20foundations.png",
     }
   ],
 

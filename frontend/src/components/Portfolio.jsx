@@ -21,7 +21,9 @@ import {
   ChevronRight,
   Star,
   Trophy,
-  Certificate
+  Certificate,
+  Clock,
+  Calendar
 } from 'lucide-react';
 import { mockData } from '../data/mockData';
 
@@ -47,8 +49,9 @@ const Portfolio = () => {
               <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-white transition-colors">About</button>
               <button onClick={() => scrollToSection('skills')} className="text-gray-300 hover:text-white transition-colors">Skills</button>
               <button onClick={() => scrollToSection('projects')} className="text-gray-300 hover:text-white transition-colors">Projects</button>
-              <button onClick={() => scrollToSection('certifications')} className="text-gray-300 hover:text-white transition-colors">Certifications</button>
               <button onClick={() => scrollToSection('experience')} className="text-gray-300 hover:text-white transition-colors">Experience</button>
+              <button onClick={() => scrollToSection('timeline')} className="text-gray-300 hover:text-white transition-colors">Timeline</button>
+              <button onClick={() => scrollToSection('certifications')} className="text-gray-300 hover:text-white transition-colors">Certifications</button>
               <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-white transition-colors">Contact</button>
             </div>
           </div>
@@ -214,11 +217,11 @@ const Portfolio = () => {
             {mockData.projects.map((project, index) => (
               <Card key={index} className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 overflow-hidden">
                 {project.image && (
-                  <div className="h-48 overflow-hidden">
+                  <div className="w-full h-64 overflow-hidden bg-gray-900">
                     <img 
                       src={project.image} 
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain p-4"
                     />
                   </div>
                 )}
@@ -256,44 +259,8 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Certifications Section */}
-      <section id="certifications" className="py-20 px-6">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16 text-white flex items-center justify-center">
-            <Trophy className="mr-3 h-10 w-10 text-yellow-400" />
-            Certifications & Achievements
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {mockData.certifications.map((cert, index) => (
-              <Card key={index} className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105">
-                <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <cert.icon className={`h-8 w-8 ${cert.color}`} />
-                    <CardTitle className="text-lg text-white">{cert.title}</CardTitle>
-                  </div>
-                  <CardDescription className="text-gray-400">{cert.issuer} • {cert.year}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-200 text-sm leading-relaxed">{cert.description}</p>
-                  {cert.link && (
-                    <Button 
-                      variant="ghost" 
-                      size="sm" 
-                      className="mt-3 p-0 text-blue-400 hover:text-blue-300"
-                      onClick={() => window.open(cert.link, '_blank')}
-                    >
-                      View Certificate <ExternalLink className="ml-1 h-3 w-3" />
-                    </Button>
-                  )}
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Experience & Education */}
-      <section id="experience" className="py-20 px-6 bg-gray-900/50">
+      <section id="experience" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Experience */}
@@ -361,8 +328,83 @@ const Portfolio = () => {
         </div>
       </section>
 
+      {/* Timeline Section */}
+      <section id="timeline" className="py-20 px-6 bg-gray-900/50">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-4xl font-bold text-center mb-16 text-white flex items-center justify-center">
+            <Clock className="mr-3 h-10 w-10 text-purple-400" />
+            Professional Timeline
+          </h2>
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-purple-400/30"></div>
+            
+            <div className="space-y-12">
+              {mockData.timeline.map((item, index) => (
+                <div key={index} className="flex items-start space-x-8">
+                  <div className="relative flex-shrink-0">
+                    <div className={`w-16 h-16 rounded-full flex items-center justify-center ${item.color} border-4 border-gray-900`}>
+                      <item.icon className="w-8 h-8 text-white" />
+                    </div>
+                  </div>
+                  <Card className="bg-gray-800/50 border-gray-700 flex-1">
+                    <CardContent className="p-6">
+                      <div className="flex justify-between items-start mb-2">
+                        <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+                        <Badge variant="secondary" className="bg-purple-600/20 text-purple-300">
+                          {item.period}
+                        </Badge>
+                      </div>
+                      <p className="text-purple-400 font-semibold mb-2">{item.organization}</p>
+                      <p className="text-gray-300 text-sm">{item.description}</p>
+                      {item.achievement && (
+                        <div className="mt-3 p-3 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
+                          <p className="text-yellow-400 text-sm font-medium">{item.achievement}</p>
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section id="certifications" className="py-20 px-6">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16 text-white flex items-center justify-center">
+            <Award className="mr-3 h-10 w-10 text-yellow-400" />
+            AWS Certifications
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            {mockData.certifications.map((cert, index) => (
+              <Card key={index} className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 overflow-hidden">
+                <div className="w-full h-48 bg-white p-4 flex items-center justify-center">
+                  <img 
+                    src={cert.image} 
+                    alt={cert.title}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-white mb-2">{cert.title}</h3>
+                  <p className="text-blue-400 font-medium mb-2">{cert.issuer}</p>
+                  <p className="text-gray-400 text-sm mb-4">Issued: {cert.year}</p>
+                  <Badge variant="outline" className="border-yellow-400/30 text-yellow-300 w-full justify-center">
+                    <Award className="w-4 h-4 mr-2" />
+                    AWS Academy
+                  </Badge>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6">
+      <section id="contact" className="py-20 px-6 bg-gray-900/50">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">Get In Touch</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -428,8 +470,8 @@ const Portfolio = () => {
                     <div className="text-sm text-gray-300">Major Projects</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-purple-400">1</div>
-                    <div className="text-sm text-gray-300">Publication</div>
+                    <div className="text-2xl font-bold text-purple-400">4</div>
+                    <div className="text-sm text-gray-300">AWS Certs</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-yellow-400">3rd</div>
