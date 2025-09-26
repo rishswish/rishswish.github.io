@@ -221,7 +221,7 @@ const Portfolio = () => {
                 onClick={() => window.open(project.github, '_blank')}
               >
                 {project.image && (
-                  <div className="w-full h-80 overflow-hidden bg-gray-900 relative group">
+                  <div className="w-full h-96 overflow-hidden bg-gray-900 relative group">
                     <img 
                       src={project.image} 
                       alt={project.title}
