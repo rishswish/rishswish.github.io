@@ -163,28 +163,28 @@ export const mockData = {
       issuer: "Amazon Web Services",
       year: "May 2023",
       image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/wkrq7j6q_AWS%20Academy%20Cloud%20Architecting.png",
-      link: "https://www.credly.com/badges/your-cloud-architecting-badge"
+      link: "https://www.credly.com/badges/3c0c46f9-09ec-4d3e-9181-590cb2536f9b/public_url"
     },
     {
       title: "AWS Academy Data Engineering",
       issuer: "Amazon Web Services",
       year: "May 2023",
       image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/xz0gyr8a_AWS%20Academy%20Data%20Engineering.png",
-      link: "https://www.credly.com/badges/your-data-engineering-badge"
+      link: "https://www.credly.com/badges/62111283-31c9-44a3-9055-a74b2155d382/public_url"
     },
     {
       title: "AWS Academy Data Analytics",
       issuer: "Amazon Web Services",
       year: "July 2022",
       image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/v6jqz9ef_aws%20data%20analytics.png",
-      link: "https://www.credly.com/badges/your-data-analytics-badge"
+      link: "https://www.credly.com/badges/2cd29752-8508-4cc6-9d35-e435f18a9158/public_url"
     },
     {
       title: "AWS Academy Cloud Foundations",
       issuer: "Amazon Web Services",
       year: "2022",
       image: "https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/71orr277_Aws%20cloud%20foundations.png",
-      link: "https://www.credly.com/badges/your-cloud-foundations-badge"
+      link: "https://www.credly.com/badges/4117e009-766a-4c43-8cc1-537744c95ca8/public_url"
     }
   ],
 
