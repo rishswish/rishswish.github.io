@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabh Patil | AI/ML Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa, #34d399);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+        }
+        .timeline-line {
+            position: absolute;
+            left: 2rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #8b5cf6, transparent);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-black text-gray-100">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-gray-900/90 backdrop-blur-md border-b border-gray-800 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-xl font-bold text-white">Rishabh Patil</h1>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-white transition-colors">Skills</a>
+                    <a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projects</a>
+                    <a href="#experience" class="text-gray-300 hover:text-white transition-colors">Experience</a>
+                    <a href="#timeline" class="text-gray-300 hover:text-white transition-colors">Timeline</a>
+                    <a href="#certifications" class="text-gray-300 hover:text-white transition-colors">Certifications</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-6 min-h-screen flex items-center">
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-2 text-blue-400 mb-4">
+                            <i class="fas fa-brain"></i>
+                            <span class="text-sm font-mono tracking-wide">AI/ML Engineer</span>
+                        </div>
+                        <h1 class="text-5xl lg:text-7xl font-bold leading-tight text-white">
+                            Hi! I am <span class="gradient-text">Rishabh</span> Patil
+                        </h1>
+                        <p class="text-xl text-gray-300 leading-relaxed max-w-2xl">
+                            Data Science graduate student at NYU, specializing in building intelligent and scalable systems at the intersection of 
+                            <span class="text-blue-400 font-semibold">machine learning</span>, 
+                            <span class="text-cyan-400 font-semibold">NLP</span>, and 
+                            <span class="text-green-400 font-semibold">computer vision</span>.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full transition-colors">
+                            Available for Internships
+                            <i class="fas fa-chevron-right ml-2"></i>
+                        </a>
+                        <a href="./resume.pdf" target="_blank" class="border border-gray-600 text-gray-200 hover:bg-gray-800 hover:text-white px-8 py-3 rounded-full transition-colors">
+                            <i class="fas fa-download mr-2"></i>
+                            Resume
+                        </a>
+                    </div>
+
+                    <div class="flex items-center space-x-6">
+                        <a href="https://github.com/rishswish" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/rishabhbhaskarpatil" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="mailto:rbp5812@nyu.edu" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-2xl opacity-20 animate-pulse"></div>
+                        <img src="https://rishswish.github.io/images/rishabh_img.JPG" alt="Rishabh Patil" class="relative w-80 h-80 object-cover rounded-full border-4 border-gray-700 shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-gray-900/50">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-white">About Me</h2>
+                <div class="grid lg:grid-cols-2 gap-12 items-start">
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-200 leading-relaxed">
+                            I'm a data-driven builder with a passion for solving real-world problems through elegant 
+                            machine learning and AI solutions. From deploying retrieval-augmented generation systems 
+                            to winning awards for deep learning research, I thrive at the intersection of code, 
+                            curiosity, and creativity.
+                        </p>
+                        <p class="text-lg text-gray-200 leading-relaxed">
+                            Currently pursuing my MS in Data Science at NYU (GPA: 3.78/4.0), I hold a B.Tech in 
+                            Data Science with Honors in Computational Finance from the University of Mumbai (GPA: 3.96/4.0).
+                        </p>
+                        <div class="flex items-center space-x-2 text-green-400">
+                            <i class="fas fa-star"></i>
+                            <span class="font-semibold">Seeking Summer/Fall 2025 internships</span>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <i class="fas fa-award text-yellow-400 text-xl"></i>
+                                <h3 class="text-xl font-semibold text-white">Recent Achievement</h3>
+                            </div>
+                            <p class="text-gray-200">
+                                3rd Prize in AI & Deep Learning Track at ICDMAI 2024 for 
+                                Driver Drowsiness Detection System. Published in Springer LNNS 998.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-400">3.78</div>
+                                <div class="text-sm text-gray-300">NYU GPA</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-cyan-400">3.96</div>
+                                <div class="text-sm text-gray-300">Undergrad GPA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">Technical Expertise</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6 card-hover transition-all duration-300">
+                    <h3 class="flex items-center space-x-3 text-xl text-white mb-4">
+                        <i class="fas fa-brain text-blue-400"></i>
+                        <span>Machine Learning</span>
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">PyTorch</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">SciKit-Learn</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">OpenCV</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">YOLO</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">NLP</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">LangChain</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6 card-hover transition-all duration-300">
+                    <h3 class="flex items-center space-x-3 text-xl text-white mb-4">
+                        <i class="fas fa-code text-blue-400"></i>
+                        <span>Programming & Tools</span>
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">R</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">SQL</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Git</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Jupyter</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">CUDA</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6 card-hover transition-all duration-300">
+                    <h3 class="flex items-center space-x-3 text-xl text-white mb-4">
+                        <i class="fas fa-database text-blue-400"></i>
+                        <span>Databases & Cloud</span>
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">MySQL</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">AWS</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">BigQuery</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Snowflake</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6 card-hover transition-all duration-300">
+                    <h3 class="flex items-center space-x-3 text-xl text-white mb-4">
+                        <i class="fas fa-globe text-blue-400"></i>
+                        <span>Web & Visualization</span>
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Streamlit</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Flask</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">PowerBI</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Tableau</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Plotly</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6 card-hover transition-all duration-300">
+                    <h3 class="flex items-center space-x-3 text-xl text-white mb-4">
+                        <i class="fas fa-chart-bar text-blue-400"></i>
+                        <span>Data Analysis</span>
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Pandas</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">NumPy</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">A/B Testing</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Time-Series</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">ARIMA</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6 card-hover transition-all duration-300">
+                    <h3 class="flex items-center space-x-3 text-xl text-white mb-4">
+                        <i class="fas fa-cloud text-blue-400"></i>
+                        <span>Big Data & DevOps</span>
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Hadoop</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Apache Spark</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Docker</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">Kubernetes</span>
+                        <span class="bg-gray-700 text-gray-100 px-3 py-1 rounded-full text-sm">PySpark</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-gray-900/50">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">Featured Projects</h2>
+            <div class="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+                
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg overflow-hidden card-hover transition-all duration-300 hover:scale-105 cursor-pointer" onclick="window.open('https://github.com/rishswish/Progressive-Learning-in-LLMs-Using-Structured-Grammar-Books', '_blank')">
+                    <div class="h-64 bg-gray-900 p-6 flex items-center justify-center">
+                        <img src="https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/w15zj4ab_grammer-learning.png" alt="Progressive Learning in LLMs" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="text-xl text-white font-semibold flex items-center">
+                                Progressive Learning in LLMs with Structured Grammar Books
+                                <i class="fas fa-external-link-alt ml-2 text-blue-400"></i>
+                            </h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4">January 2025 – May 2025</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="text-gray-200 text-sm flex items-start">
+                                <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                Curated a 345-lesson curriculum from New Concept English using Tesseract OCR and Stanza, generating 1.7K syntax feature vectors
+                            </li>
+                            <li class="text-gray-200 text-sm flex items-start">
+                                <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                Built Transformer variants (SyntaxGPT, SyntaxT5) cutting pre-training time from 2.5 days to 3 hours (-95% compute)
+                            </li>
+                            <li class="text-gray-200 text-sm flex items-start">
+                                <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                SyntaxT5 achieved 87% accuracy on TREC benchmark with 52% faster inference
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs">PyTorch</span>
+                            <span class="border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs">Hugging Face</span>
+                            <span class="border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg overflow-hidden card-hover transition-all duration-300 hover:scale-105 cursor-pointer" onclick="window.open('https://github.com/rishswish/Drowsiness-Detection-Important-Files', '_blank')">
+                    <div class="h-64 bg-gray-900 p-6 flex items-center justify-center">
+                        <img src="https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/ini9z5do_driver-drowsiness-detection.png" alt="Driver Drowsiness Detection" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="text-xl text-white font-semibold flex items-center">
+                                Driver Drowsiness Detection System Using YOLOv5
+                                <i class="fas fa-external-link-alt ml-2 text-blue-400"></i>
+                            </h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4">January 2022 – January 2024</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="text-gray-200 text-sm flex items-start">
+                                <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                Trained dual YOLOv5 models achieving 85% accuracy with 30% faster alert-response
+                            </li>
+                            <li class="text-gray-200 text-sm flex items-start">
+                                <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                Integrated CNN-fusion layer reducing false positives by 20% and improving accuracy by 15%
+                            </li>
+                            <li class="text-gray-200 text-sm flex items-start">
+                                <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                Awarded 3rd Prize in AI & Deep Learning track at ICDMAI 2024; published in Springer LNNS 998
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs">YOLOv5</span>
+                            <span class="border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs">Computer Vision</span>
+                            <span class="border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg overflow-hidden card-hover transition-all duration-300 hover:scale-105 cursor-pointer" onclick="window.open('https://github.com/rishswish/Recipe-Gpt', '_blank')">
+                    <div class="h-64 bg-gray-900 p-6 flex items-center justify-center">
+                        <img src="https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/66ieat0e_recipe-recommendation-system.png" alt="Recipe Recommendation System" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="text-xl text-white font-semibold flex items-center">
+                                Personalized Recipe Recommendation System
+                                <i class="fas fa-external-link-alt ml-2 text-blue-400"></i>
+                            </h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4">July 2023 - May 2024</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="text-gray-200 text-sm flex items-start">
+                                <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                Built Flask interface backed by GPT-4 + LanceDB RAG pipeline, driving 35% jump in user engagement
+                            </li>
+                            <li class="text-gray-200 text-sm flex items-start">
+                                <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                Designed allergy-aware cosine-similarity scorer boosting user-satisfaction scores by 50%
+                            </li>
+                            <li class="text-gray-200 text-sm flex items-start">
+                                <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                Orchestrated cloud workflows serving real-time recommendations to 10K+ sessions
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs">Flask</span>
+                            <span class="border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs">GPT-4</span>
+                            <span class="border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs">RAG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg overflow-hidden card-hover transition-all duration-300 hover:scale-105 cursor-pointer" onclick="window.open('https://github.com/rishswish/Big-Data_Movie-recommendation_and_Customer-Segmentation', '_blank')">
+                    <div class="h-64 bg-gray-900 p-6 flex items-center justify-center">
+                        <img src="https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/ojlon211_Big-Data-Project.png" alt="MovieLens Big Data Project" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-2">
+                            <h3 class="text-xl text-white font-semibold flex items-center">
+                                MovieLens Recommendation & Segmentation
+                                <i class="fas fa-external-link-alt ml-2 text-blue-400"></i>
+                            </h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4">January 2025 – May 2025</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="text-gray-200 text-sm flex items-start">
+                                <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                Built terabyte-scale PySpark + Hadoop pipeline on full MovieLens corpus (330K users / 86K movies)
+                            </li>
+                            <li class="text-gray-200 text-sm flex items-start">
+                                <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                Developed Spark ALS model with +30% Precision@100 and bias-corrected popularity model
+                            </li>
+                            <li class="text-gray-200 text-sm flex items-start">
+                                <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                Achieved +66% MAP and 20× ALS performance improvement with sub-second latency using MinHash + LSH
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs">PySpark</span>
+                            <span class="border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs">Hadoop</span>
+                            <span class="border border-blue-400/30 text-blue-300 px-3 py-1 rounded-full text-xs">Big Data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="experience" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Experience -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 flex items-center text-white">
+                        <i class="fas fa-briefcase mr-3 text-blue-400"></i>
+                        Experience
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-white">NLP Intern</h3>
+                                <span class="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-full text-sm">Aug 2025 - Present</span>
+                            </div>
+                            <p class="text-blue-400 font-semibold mb-3">Muck Rack - New York, USA</p>
+                            <ul class="space-y-2">
+                                <li class="text-gray-200 text-sm flex items-start">
+                                    <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                    Partnered with enterprise stakeholders to implement RAG-powered chatbot solution
+                                </li>
+                                <li class="text-gray-200 text-sm flex items-start">
+                                    <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                    Delivered 40% faster review cycle and 10% cost reductions
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-white">Generative AI Intern</h3>
+                                <span class="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-full text-sm">Feb 2023 - Apr 2023</span>
+                            </div>
+                            <p class="text-blue-400 font-semibold mb-3">Solar Secure Solution - Karnataka, India</p>
+                            <ul class="space-y-2">
+                                <li class="text-gray-200 text-sm flex items-start">
+                                    <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                    Built real-time IoT analytics pipeline cutting incident response time by 40%
+                                </li>
+                                <li class="text-gray-200 text-sm flex items-start">
+                                    <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                    Designed predictive insights via time-series modeling with 78% precision
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-white">Machine Learning Intern</h3>
+                                <span class="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-full text-sm">Jul 2022 - Sep 2022</span>
+                            </div>
+                            <p class="text-blue-400 font-semibold mb-3">Acmegrade Pvt Ltd - Karnataka, India</p>
+                            <ul class="space-y-2">
+                                <li class="text-gray-200 text-sm flex items-start">
+                                    <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                    Developed Computer Vision + NLP pipeline using Azure OCR
+                                </li>
+                                <li class="text-gray-200 text-sm flex items-start">
+                                    <i class="fas fa-chevron-right text-blue-400 mt-1 mr-2 text-xs"></i>
+                                    Eliminated 75% of manual review effort through prompt-engineering modules
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 flex items-center text-white">
+                        <i class="fas fa-graduation-cap mr-3 text-green-400"></i>
+                        Education
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-white">M.S. in Data Science</h3>
+                                <span class="bg-green-600/20 text-green-300 px-3 py-1 rounded-full text-sm">GPA: 3.78/4.0</span>
+                            </div>
+                            <p class="text-green-400 font-semibold mb-2">New York University, Center for Data Science</p>
+                            <p class="text-gray-400 text-sm mb-3">September 2024 – May 2026</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="border border-green-400/30 text-green-300 px-3 py-1 rounded-full text-xs">Natural Language Understanding</span>
+                                <span class="border border-green-400/30 text-green-300 px-3 py-1 rounded-full text-xs">Big Data</span>
+                                <span class="border border-green-400/30 text-green-300 px-3 py-1 rounded-full text-xs">Machine Learning</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-white">B.Tech in Computer Science (Data Science)</h3>
+                                <span class="bg-green-600/20 text-green-300 px-3 py-1 rounded-full text-sm">GPA: 3.96/4.0</span>
+                            </div>
+                            <p class="text-green-400 font-semibold mb-2">University of Mumbai</p>
+                            <p class="text-gray-400 text-sm mb-3">July 2020 - May 2024</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="border border-green-400/30 text-green-300 px-3 py-1 rounded-full text-xs">Deep Learning</span>
+                                <span class="border border-green-400/30 text-green-300 px-3 py-1 rounded-full text-xs">Computer Vision</span>
+                                <span class="border border-green-400/30 text-green-300 px-3 py-1 rounded-full text-xs">Time-Series</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline" class="py-20 px-6 bg-gray-900/50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white flex items-center justify-center">
+                <i class="fas fa-clock mr-3 text-purple-400"></i>
+                Professional Timeline
+            </h2>
+            <div class="relative">
+                <div class="timeline-line"></div>
+                <div class="space-y-12">
+                    <div class="flex items-start space-x-8">
+                        <div class="w-16 h-16 rounded-full bg-blue-500 border-4 border-gray-900 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6 flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-white">NLP Intern</h3>
+                                <span class="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm">Aug 2025 - Present</span>
+                            </div>
+                            <p class="text-purple-400 font-semibold mb-2">Muck Rack, New York</p>
+                            <p class="text-gray-300 text-sm">Implementing RAG-powered chatbot solutions with GPT-4.5, LangChain, and Weaviate for enterprise media intelligence platform</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-8">
+                        <div class="w-16 h-16 rounded-full bg-green-500 border-4 border-gray-900 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-graduation-cap text-white"></i>
+                        </div>
+                        <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6 flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-white">MS in Data Science</h3>
+                                <span class="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm">Sep 2024 - May 2026</span>
+                            </div>
+                            <p class="text-purple-400 font-semibold mb-2">New York University</p>
+                            <p class="text-gray-300 text-sm">Currently pursuing Master's degree with focus on Natural Language Understanding, Big Data, and Machine Learning (GPA: 3.78/4.0)</p>
+                            <div class="mt-3 p-3 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
+                                <p class="text-yellow-400 text-sm font-medium">Selected among top 0.5% applicants nationwide</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-8">
+                        <div class="w-16 h-16 rounded-full bg-blue-500 border-4 border-gray-900 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6 flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-white">Generative AI Intern</h3>
+                                <span class="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm">Feb 2023 - Apr 2023</span>
+                            </div>
+                            <p class="text-purple-400 font-semibold mb-2">Solar Secure Solution, India</p>
+                            <p class="text-gray-300 text-sm">Built real-time IoT analytics pipeline with predictive insights using ARIMA modeling, cutting incident response time by 40%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-8">
+                        <div class="w-16 h-16 rounded-full bg-blue-500 border-4 border-gray-900 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6 flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-white">Machine Learning Intern</h3>
+                                <span class="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm">Jul 2022 - Sep 2022</span>
+                            </div>
+                            <p class="text-purple-400 font-semibold mb-2">Acmegrade Pvt Ltd, India</p>
+                            <p class="text-gray-300 text-sm">Developed Computer Vision + NLP pipeline using Azure OCR, reducing processing time by 25% and manual review effort by 75%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-8">
+                        <div class="w-16 h-16 rounded-full bg-green-500 border-4 border-gray-900 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-graduation-cap text-white"></i>
+                        </div>
+                        <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-6 flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-white">B.Tech in Data Science (Honors)</h3>
+                                <span class="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm">Jul 2020 - May 2024</span>
+                            </div>
+                            <p class="text-purple-400 font-semibold mb-2">University of Mumbai</p>
+                            <p class="text-gray-300 text-sm">Graduated with Honors in Computational Finance, specializing in Data Science and Engineering (GPA: 3.96/4.0)</p>
+                            <div class="mt-3 p-3 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
+                                <p class="text-yellow-400 text-sm font-medium">Dean's List all semesters, Research Project Leadership</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white flex items-center justify-center">
+                <i class="fas fa-award mr-3 text-yellow-400"></i>
+                AWS Certifications
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg overflow-hidden card-hover transition-all duration-300 hover:scale-105 cursor-pointer" onclick="window.open('https://www.credly.com/badges/3c0c46f9-09ec-4d3e-9181-590cb2536f9b/public_url', '_blank')">
+                    <div class="w-full h-48 bg-white p-4 flex items-center justify-center">
+                        <img src="https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/wkrq7j6q_AWS%20Academy%20Cloud%20Architecting.png" alt="AWS Cloud Architecting" class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-white mb-2 flex items-center">
+                            AWS Academy Cloud Architecting
+                            <i class="fas fa-external-link-alt ml-2 text-blue-400"></i>
+                        </h3>
+                        <p class="text-blue-400 font-medium mb-2">Amazon Web Services</p>
+                        <p class="text-gray-400 text-sm mb-4">Issued: May 2023</p>
+                        <div class="border border-yellow-400/30 text-yellow-300 px-3 py-2 rounded-full text-center">
+                            <i class="fas fa-award mr-2"></i>
+                            AWS Academy
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg overflow-hidden card-hover transition-all duration-300 hover:scale-105 cursor-pointer" onclick="window.open('https://www.credly.com/badges/62111283-31c9-44a3-9055-a74b2155d382/public_url', '_blank')">
+                    <div class="w-full h-48 bg-white p-4 flex items-center justify-center">
+                        <img src="https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/xz0gyr8a_AWS%20Academy%20Data%20Engineering.png" alt="AWS Data Engineering" class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-white mb-2 flex items-center">
+                            AWS Academy Data Engineering
+                            <i class="fas fa-external-link-alt ml-2 text-blue-400"></i>
+                        </h3>
+                        <p class="text-blue-400 font-medium mb-2">Amazon Web Services</p>
+                        <p class="text-gray-400 text-sm mb-4">Issued: May 2023</p>
+                        <div class="border border-yellow-400/30 text-yellow-300 px-3 py-2 rounded-full text-center">
+                            <i class="fas fa-award mr-2"></i>
+                            AWS Academy
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg overflow-hidden card-hover transition-all duration-300 hover:scale-105 cursor-pointer" onclick="window.open('https://www.credly.com/badges/2cd29752-8508-4cc6-9d35-e435f18a9158/public_url', '_blank')">
+                    <div class="w-full h-48 bg-white p-4 flex items-center justify-center">
+                        <img src="https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/v6jqz9ef_aws%20data%20analytics.png" alt="AWS Data Analytics" class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-white mb-2 flex items-center">
+                            AWS Academy Data Analytics
+                            <i class="fas fa-external-link-alt ml-2 text-blue-400"></i>
+                        </h3>
+                        <p class="text-blue-400 font-medium mb-2">Amazon Web Services</p>
+                        <p class="text-gray-400 text-sm mb-4">Issued: July 2022</p>
+                        <div class="border border-yellow-400/30 text-yellow-300 px-3 py-2 rounded-full text-center">
+                            <i class="fas fa-award mr-2"></i>
+                            AWS Academy
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg overflow-hidden card-hover transition-all duration-300 hover:scale-105 cursor-pointer" onclick="window.open('https://www.credly.com/badges/4117e009-766a-4c43-8cc1-537744c95ca8/public_url', '_blank')">
+                    <div class="w-full h-48 bg-white p-4 flex items-center justify-center">
+                        <img src="https://customer-assets.emergentagent.com/job_4e8ce6b1-8300-426d-aa1b-6d0e5fa5aafb/artifacts/71orr277_Aws%20cloud%20foundations.png" alt="AWS Cloud Foundations" class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-white mb-2 flex items-center">
+                            AWS Academy Cloud Foundations
+                            <i class="fas fa-external-link-alt ml-2 text-blue-400"></i>
+                        </h3>
+                        <p class="text-blue-400 font-medium mb-2">Amazon Web Services</p>
+                        <p class="text-gray-400 text-sm mb-4">Issued: 2022</p>
+                        <div class="border border-yellow-400/30 text-yellow-300 px-3 py-2 rounded-full text-center">
+                            <i class="fas fa-award mr-2"></i>
+                            AWS Academy
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6 bg-gray-900/50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">Get In Touch</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-400">Let's Build Something Amazing</h3>
+                        <p class="text-lg text-gray-200 leading-relaxed">
+                            I'm actively seeking Summer/Fall 2025 internships in Data Science, Machine Learning, 
+                            AI, or Data Analysis. Let's connect and discuss how my technical expertise can 
+                            contribute to your team.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3 text-gray-200">
+                            <i class="fas fa-envelope text-blue-400"></i>
+                            <a href="mailto:rbp5812@nyu.edu" class="hover:text-blue-400 transition-colors">
+                                rbp5812@nyu.edu
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-3 text-gray-200">
+                            <i class="fas fa-phone text-green-400"></i>
+                            <a href="tel:+19294247773" class="hover:text-green-400 transition-colors">
+                                +1 929-424-7773
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-3 text-gray-200">
+                            <i class="fas fa-map-marker-alt text-purple-400"></i>
+                            <span>New York, NY</span>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/rishabhbhaskarpatil" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+                            <i class="fab fa-linkedin mr-2"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/rishswish" target="_blank" class="border border-gray-600 text-gray-200 hover:bg-gray-800 hover:text-white px-6 py-3 rounded-lg transition-colors">
+                            <i class="fab fa-github mr-2"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 border border-gray-700 rounded-lg p-8 text-center">
+                    <i class="fas fa-book-open text-6xl text-blue-400 mb-6"></i>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Quick Stats</h3>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <div class="text-2xl font-bold text-blue-400">3+</div>
+                            <div class="text-sm text-gray-300">Internships</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-green-400">4+</div>
+                            <div class="text-sm text-gray-300">Major Projects</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-purple-400">4</div>
+                            <div class="text-sm text-gray-300">AWS Certs</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-yellow-400">3rd</div>
+                            <div class="text-sm text-gray-300">Place Award</div>
+                        </div>
+                    </div>
+                    <div class="w-full h-px bg-gray-700 my-6"></div>
+                    <a href="./resume.pdf" target="_blank" class="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white py-3 px-6 rounded-lg transition-colors inline-block">
+                        <i class="fas fa-download mr-2"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-gray-800 bg-gray-900/50">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-300">
+                © 2025 Rishabh Patil. Built with HTML, CSS & JavaScript.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
