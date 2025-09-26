@@ -141,7 +141,7 @@ export const mockData = {
       issuer: "University of Mumbai",
       year: "2023",
       description: "Recognized by department faculty for delivering a guest seminar on NLP in Industry, sharing practical insights with undergraduate students.",
-      icon: Certificate,
+      icon: GraduationCap,
       color: "text-green-400"
     },
     {
